@@ -5,7 +5,7 @@ import User from "../models/User";
 class UserController {
   async store(req, res) {
     const schema = Yup.object().shape({
-      nome: Yup.string().required(),
+      name: Yup.string().required(),
       email: Yup.string()
         .email()
         .required(),
@@ -57,7 +57,7 @@ class UserController {
 
     const user = await User.findByPk(req.userId);
 
-    if (email !== user.email) {
+    if (email && email !== user.email) {
       const userExists = await User.findOne({ where: { email } });
 
       if (userExists) {
