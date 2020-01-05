@@ -16,24 +16,24 @@ import AvailableController from "./app/controllers/AvailableController";
 const routes = new Router();
 const upload = multer(multerConfig);
 
-routes.post("/sessions", SessionController.store);
-routes.post("/users", UserController.store);
+routes.post("/sessions", SessionController.store); //Logar
+routes.post("/users", UserController.store); // Criar User
 
 routes.use(authMiddlewere);
 
-routes.put("/users", UserController.update);
+routes.put("/users", UserController.update); // Atualizar User
 
-routes.get("/providers", ProviderController.index);
-routes.get("/providers/:providerId/available", AvailableController.index);
+routes.get("/providers", ProviderController.index); // Listar prestador de serviço
+routes.get("/providers/:providerId/available", AvailableController.index); // Listar horários disponíveis em um dado dia de uma prestador
 
-routes.get("/appointments", AppointmentController.index);
-routes.post("/appointments", AppointmentController.store);
-routes.delete("/appointments/:id", AppointmentController.delete);
+routes.get("/appointments", AppointmentController.index); // Listar agendamentos do usuário
+routes.post("/appointments", AppointmentController.store); // Cadastrar agendamentos
+routes.delete("/appointments/:id", AppointmentController.delete); // Cancelar agendamentos
 
-routes.get("/schedule", ScheduleController.index);
+routes.get("/schedule", ScheduleController.index); // Listar agendamentos do prestador de serviço
 
-routes.get("/notifications", NotificationController.index);
-routes.put("/notifications/:id", NotificationController.update);
+routes.get("/notifications", NotificationController.index); // Listar notificações
+routes.put("/notifications/:id", NotificationController.update); // Editar notificação como lida
 
-routes.post("/files", upload.single("file"), FileController.store);
+routes.post("/files", upload.single("file"), FileController.store); // Fazer upload de arquivos
 export default routes;

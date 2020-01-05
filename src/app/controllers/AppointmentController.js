@@ -151,7 +151,7 @@ class AppointmentController {
       });
     }
 
-    // removo duas horas da data agendada
+    // remover duas horas da data agendada
     const dateWithSub = subHours(appointment.date, 2);
     const NOW = new Date();
     if (isBefore(dateWithSub, NOW)) {

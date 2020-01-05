@@ -1,11 +1,11 @@
-import 'dotenv/config';
+import "dotenv/config";
 
 import express from "express";
 import path from "path";
 import * as Sentry from "@sentry/node";
+import sentryConfig from "./config/sentry";
 import Youch from "youch";
 import routes from "./routes";
-import sentryConfig from "./config/sentry";
 import "express-async-errors";
 
 import "./database";
