@@ -5,7 +5,7 @@ API NodeJS desenvolvida no curso Bootcamp goStack da [rocketseat](https://rocket
 ## Índice
 
 - [Instalações](#instalações)
-- [Instalações opicionais](#instalações-opicionais)
+- [Instalações opcionais](#instalações-opcionais)
 - [Plugins VSCode](#plugins-vscode)
 - [Bibliotecas utilizadas](#bibliotecas-utilizadas)
 - [Configuração](#configuração)
@@ -18,7 +18,7 @@ API NodeJS desenvolvida no curso Bootcamp goStack da [rocketseat](https://rocket
 - [Yarn](https://yarnpkg.com/)
 - [Docker](https://www.docker.com/)
 
-### Instalações opicionais
+### Instalações opcionais
 
 - [Insomnia](https://insomnia.rest/)
 - [MongoDB Compass](https://www.mongodb.com/products/compass)
@@ -34,32 +34,31 @@ API NodeJS desenvolvida no curso Bootcamp goStack da [rocketseat](https://rocket
 
 ### Bibliotecas utilizadas:
 
-- [@sentry/node](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/@sentry-node.md)
-- [bcrypt.js](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/bcryptjs.md)
-- [Bee-Queue](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/bee-queue.md)
-- [CORS](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/cors.md)
-- [date-fns](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/date-fns.md)
-- [dotenv](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/dotenv.md)
-- [ESLint](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/eslint.md)
-- [eslint-config-prettier](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/eslint-config-prettier.md)
-- [eslint-plugin-prettier](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/eslint-plugin-prettier.md)
-- [Express](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/express.md)
-- [Express Handlebars](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/express-handlebars.md)
-- [Express Handlebars plugin for Nodemailer](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/nodemailer-express-handlebars.md)
-- [ExpressJS Async Errors](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/express-async-errors.md)
-- [Json Web Token](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/jsonwebtoken.md)
-- [Mongoose](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/mongoose.md)
-- [Multer](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/multer.md)
-- [Nodemailer](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/nodemailer.md)
-- [Nodemon](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/nodemon.md)
-- [pg](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/pg.md)
-- [pg-hstore](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/pg-hstore.md)
-- [Prettier](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/prettier.md)
-- [Sequelize](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/sequelize.md)
-- [sequelize-cli](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/sequelize-cli.md)
-- [Sucrase](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/sucrase.md)
-- [Youch](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/youch.md)
-- [Yup](https://github.com/osvaldokalvaitir/projects-settings/blob/master/nodejs/libs/yup.md)
+- [@sentry/node](https://github.com/getsentry/sentry-javascript)
+- [bcrypt.js](https://github.com/dcodeIO/bcrypt.js)
+- [Bee-Queue](https://github.com/bee-queue/bee-queue)
+- [CORS](https://github.com/expressjs/cors)
+- [date-fns](https://github.com/date-fns/date-fns)
+- [dotenv](https://github.com/motdotla/dotenv)
+- [ESLint](https://github.com/eslint/eslint)
+- [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier)
+- [Express](https://github.com/expressjs/express)
+- [Express Handlebars](https://github.com/ericf/express-handlebars)
+- [Express Handlebars plugin for Nodemailer](https://github.com/yads/nodemailer-express-handlebars)
+- [ExpressJS Async Errors](https://github.com/davidbanham/express-async-errors)
+- [Json Web Token](https://github.com/auth0/node-jsonwebtoken)
+- [Mongoose](https://github.com/Automattic/mongoose)
+- [Multer](https://github.com/expressjs/multer)
+- [Nodemailer](https://github.com/nodemailer/nodemailer)
+- [Nodemon](https://github.com/remy/nodemon)
+- [pg](https://github.com/brianc/node-postgres)
+- [pg-hstore](https://github.com/scarney81/pg-hstore)
+- [Prettier](https://github.com/prettier/prettier)
+- [Sequelize](https://github.com/sequelize/sequelize)
+- [sequelize-cli](https://github.com/sequelize/cli)
+- [Sucrase](https://github.com/alangpierce/sucrase)
+- [Youch](https://github.com/poppinss/youch)
+- [Yup](https://github.com/jquense/yup)
 
 ### Configuração
 
@@ -86,7 +85,7 @@ docker run --name database -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
 
 Quando não passa o POSTGRES_USER, é criado um user chamado 'postgres'.
 
-Se preferir configurar seu usuário e sua senha, o comendo abaixo cria o container Postgres passando as informações de usuário e senha.
+Se preferir configurar seu usuário e sua senha, o comando abaixo cria o container Postgres passando as informações de usuário e senha.
 
 ```
 docker run --name database -e POSTGRES_USER=user POSTGRES_PASSWORD=senha -p 5432:5432 -d postgres
@@ -108,7 +107,7 @@ docker  run  --name redisbarber -p 6379:6379 -d  -t redis:alpine
 
 ---
 
-Caso já tenha criado os containers com as imagems, confira se os containers
+Caso já tenha criado os containers com as imagens, confira se os containers
 estão sendo executados (exibe apenas as imagens que estão rodando):
 
 ```
@@ -166,7 +165,7 @@ Vamos precisar do DSN para configuração do arquivo .env na raiz do projeto.
 
 O arquivo de configuração .env está no .gitignore porque contém informações sensíveis e
 que varia para cada ambiente de desenvolvimento, tem um arquivo chamado .env.example para
-seguir como base, renomei-o apenas para .env e adicione as seguintes informações.
+seguir como base, renomeie apenas para .env e adicione as seguintes informações.
 
 ```
 # create a .env and configure it for you environment
